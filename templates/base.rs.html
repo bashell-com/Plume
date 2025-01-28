@@ -9,6 +9,15 @@
 <!DOCTYPE html>
 <html class="@ctx.2.clone().and_then(|u| u.preferred_theme).unwrap_or_else(|| CONFIG.default_theme.clone())">
     <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6SPTXPZX31"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-6SPTXPZX31');
+        </script>
         <meta charset="utf-8" />
         <title>@title ⋅ @i18n!(ctx.1, "Plume")</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
